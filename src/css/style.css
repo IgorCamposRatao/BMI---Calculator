@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {}
+
+.section-one {
+    margin: 0 22px;
+    background-color: lightsteelblue;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.logo img {
+    width: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 700;
+}
+
+.introduce h1 {
+
+    display: flex;
+    width: 100%;
+    text-align: center;
+    color: #253347;
+}
+
+.introduce p {
+    padding: 2rem 0;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #5E6E85;
+}
+
+.form-data form {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 16px;
+}
+
+.unity {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #253347;
+    width: 100%;
+}
+
+.measures {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.height,
+.weight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.measures label {
+    width: 100%;
+    color: #5E6E85;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.measures input {
+    width: 100%;
+    border-radius: 12px;
+    height: 69px;
+
+    border-color: #D8E2E7 1px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 2rem;
+    background-color: #345FF6;
+    color: white;
+    border-radius: 16px;
+    gap: 1.5rem;
+}
+
+.result * {
+    width: 100%;
+}
+
+.section-two {
+    padding-top: 5rem;
+}
+
+.meaning-results {
+    margin: 22px;
+    padding: 2rem 0;
+}
+
+.meaning-results h3 {
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.section-two img {
+    width: 100%;
+}
+
+.meaning-results p {
+    color: #5E6E85;
+    text-align: justify;
+}
+
+.indications {
+    padding: 2rem 0;
+    margin: 22px;
+}
+
+.indicator {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.indicator div {
+    width: 100%;
+    height: 64px;
+}
+
+.indicator h2 {
+   padding-top: 2rem;
+}
+
+.indicator p {
+    padding: 1.5rem 0;
+    width: 100%;
+    color: #5E6E85;
+}
+
+span {
+
+}
