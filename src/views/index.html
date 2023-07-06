@@ -31,7 +31,7 @@
             health and well-being.</p>
         </div>
       </div>
-      <div class="form-data">
+      <div class="form-data metric">
         <form action="post">
           <h3>Enter your details below</h3>
 
@@ -61,6 +61,46 @@
               <h1>23.4</h1>
             </div>
             <p>Your BMI suggests you're a healthy weight. Your ideal weight is between 63.3kgs - 85.2kgs.</p>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-data imperial">
+        <form action="post">
+          <h3>Enter your details below</h3>
+
+          <fieldset class="unity">
+            <div class="radio-options">
+              <input type="radio" class="radio-type" value="Metric" name="unitys">
+              <label for="">Metric</label>
+            </div>
+            <div class="radio-options">
+              <input type="radio" class="radio-type" value="Imperial" name="unitys">
+              <label for="">Imperial</label>
+            </div>
+          </fieldset>
+          <div class="measures">
+            <div class="height">
+              <label for="height">Height</label>
+              <div class="imperial-input">
+                <input type="text" name="height" placeholder="ft">
+                <input type="text" name="height" placeholder="in">
+              </div>
+            </div>
+            <div class="weight">
+              <label for="weight">Weight</label>
+              <div class="imperial-input">
+              <input type="text" name="weight" placeholder="st">
+              <input type="text" name="weight" placeholder="lbs">
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <div>
+              <span>Your BMI is</span>
+              <h1>23.4</h1>
+            </div>
+            <p>Your BMI suggests you're a healthy weight. Your ideal weight is between 9st 6lbs - 12st 10lbs</p>
           </div>
         </form>
       </div>
