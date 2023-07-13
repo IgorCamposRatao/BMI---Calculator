@@ -7,11 +7,18 @@
     font-family: 'Inter', sans-serif;
 }
 
-main {}
+.curved-line {
+    display: none;
+}
 
-.section-one {
-    margin: 0 22px;
-    background-color: lightsteelblue;
+.introduce-main {
+    background-image: linear-gradient(to right, rgba(214, 252, 254, 0), rgba(214, 230, 254, 1));
+    border-radius: 0 0 35px 35px;
+    height: 640px;
+}
+
+.imperial {
+    display: none;
 }
 
 .logo {
@@ -23,7 +30,7 @@ main {}
 }
 
 .logo img {
-    width: 40px;
+    height: 40px;
 }
 
 h1 {
@@ -32,11 +39,15 @@ h1 {
     font-weight: 700;
 }
 
-.introduce h1 {
+.introduce {
+    margin: 0 22px;
+}
 
+.introduce h1 {
     display: flex;
     width: 100%;
     text-align: center;
+    justify-content: center;
     color: #253347;
 }
 
@@ -48,20 +59,53 @@ h1 {
     color: #5E6E85;
 }
 
+.form-data {
+    margin: 0 22px;
+    position: relative;
+    bottom: 150px;
+}
+
 .form-data form {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
-    padding: 1.5rem;
+    padding: 1.5rem 1.0rem ;
+    gap: 1.5rem;
     border-radius: 16px;
+    box-shadow: 0px 20px 50px rgba(214, 230, 254, 1);
 }
 
 .unity {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 0;
+    justify-content: flex-start;
+    padding: 1rem 1rem;
     width: 100%;
+    gap: 1.5rem;
+    border: none;
 }
 
-h2 {
+.radio-options {
+    gap: .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 31px;
+}
+
+
+.unity input,
+.unity label {
+    width: 100%;
+    text-align: left;
+}
+
+.radio-type {
+    height: 100%;
+    background-color: red;
+    color: red;
+}
+
+h3 {
     font-size: 24px;
     font-weight: 700;
     color: #253347;
@@ -69,8 +113,19 @@ h2 {
 }
 
 .measures {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     width: 100%;
-    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.measures input::placeholder {
+    color: blue;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 20px;
 }
 
 .height,
@@ -78,7 +133,14 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: .5rem;
     justify-content: flex-start;
+}
+
+.imperial-input {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
 }
 
 .measures label {
@@ -89,11 +151,14 @@ h2 {
 }
 
 .measures input {
+    text-align: right;
+    padding-right: 1rem;
     width: 100%;
     border-radius: 12px;
     height: 69px;
-
-    border-color: #D8E2E7 1px;
+    border-color: #D8E2E7;
+    border-width: 1px;
+    border-style: solid;
 }
 
 p {
@@ -113,17 +178,13 @@ p {
     gap: 1.5rem;
 }
 
-.result * {
+.result div {
     width: 100%;
 }
 
-.section-two {
-    padding-top: 5rem;
-}
-
 .meaning-results {
-    margin: 22px;
-    padding: 2rem 0;
+    background-color: #FFFFFF;
+    padding: 2rem 22px;
 }
 
 .meaning-results h3 {
@@ -140,28 +201,31 @@ p {
 .meaning-results p {
     color: #5E6E85;
     text-align: justify;
+
 }
 
-.indications {
-    padding: 2rem 0;
-    margin: 22px;
+.indications-section {
+    padding: 2rem 22px;
+    background-image: linear-gradient(to top, rgba(214, 230, 254, 1), rgba(214, 252, 254, 0));
 }
 
 .indicator {
+    padding: .5rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
     width: 100%;
 }
 
-.indicator div {
+.indicator-icon {
+    justify-content: left;
+    align-items: left;
     width: 100%;
-    height: 64px;
 }
 
-.indicator h2 {
-   padding-top: 2rem;
+.indicator h3 {
+    padding-top: 2rem;
 }
 
 .indicator p {
@@ -170,6 +234,303 @@ p {
     color: #5E6E85;
 }
 
-span {
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    color: #253347;
+    width: 100%;
+}
+
+.limitations {
+    padding-bottom: 3rem;
+    background-image: radial-gradient(circle, rgba(214, 230, 254, 1), rgba(214, 252, 254, 0));
+}
+
+.limitation-introdutory {
+    padding: 2rem 22px;
+    background-color: #FFFFFF;
+}
+
+.limitation-introdutory h2 {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.limitation-introdutory p {
+    padding-bottom: 3.5rem;
+    color: #5E6E85;
+    text-align: center;
+}
+
+.limitation-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 22px;
+    gap: 1rem;
+}
+
+.cards {
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.cards-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+    width: 100%;
+}
+
+.cards p {
+    color: #5E6E85;
+}
+
+@media (min-width: 768px) {
+
+    .introduce h1 {
+        width: 390px;
+    }
+
+    .form-data {
+
+        bottom: 300px;
+    }
+
+    .measures {
+        flex-direction: row;
+    }
+
+    .result {
+        flex-direction: row;
+        border-radius: 16px 120px 120px 16px;
+    }
+
+    .result p {
+        padding-top: .5rem;
+    }
+
+    .result-introduce {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .result-introduce img {
+        position: relative;
+        left: -60px;
+        width: 365px;
+    }
+
+    .indicator {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .indicator-icon{
+        width: 10%;
+    }
+
+    .limitation-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem 22px;
+        gap: 1rem;
+    }
+
+    .cards {
+        padding: 2rem;
+        width: 335px;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        max-width: 1440px;
+        height: 100%;
+    }
+
+    .section-one {
+        display: flex;
+        height: 737px;
+    }
+
+    .curved-line {
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+
+    .line-left {
+        position: absolute;
+        right: 200px;
+    }
+
+    .line-right {
+        position: absolute;
+        left: 100px;
+        top: 200px;
+    }
+
+    .logo img {
+        height: 64px;
+    }
+
+    .logo {
+        display: inline;
+        padding: 74px 0;
+        width: 100%;
+    }
+
+    .form-data {
+        height: 564px;
+        position: relative;
+        right: 150px;
+        top: 100px;
+        margin: 0;
+    }
+
+    .form-data form {
+        box-shadow: 20px 20px 40px rgba(214, 230, 254, 1);
+    }
+
+
+    .introduce-main {
+        width: 100%;
+    }
+
+    .introduce {
+        display: flex;
+        flex-direction: column;
+
+        width: 564px;
+        padding-left: 100px;
+    }
+
+    .introduce h1,
+    .introduce p {
+        text-align: left;
+        width: 100%
+    }
+
+    .result p {
+        padding-left: 24px;
+    }
+
+    .result-introduce {
+        width: 1160px;
+        gap: 131px;
+        height: 100%;
+
+    }
+
+    .result-introduce img {
+        position: relative;
+        left: 0;
+        width: 564px;
+    }
+
+    .meaning-results {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2rem 22px;
+    }
+
+    .indications {
+        padding: 5rem 0;
+        display: flex;
+        width: 1159px;
+        gap: 2rem;
+    }
+
+    .indicator {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .indicator-icon {
+        width: 100%;
+    }
+
+    .limitations {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 1160px;
+        height: 800px;
+        padding: 2rem 0;
+        background-image: none;
+
+    }
+
+    .lim-2 {
+        position: relative;
+        width: 100%;
+    }
+
+    .limitation-introdutory {
+        width: 564px;
+        position: absolute;
+        left: 0;
+        padding: 0;
+    }
+
+    .limitation-introdutory p,
+    .limitation-introdutory h2 {
+        text-align: left;
+    }
+
+    .limitation-cards {
+        position: relative;
+    }
+
+    .cards {
+        box-shadow: 20px 20px 40px rgba(214, 230, 254, 1);
+    }
+
+    .card-1 {
+        position: absolute;
+        right: 80px;
+        top: 0;
+    }
+
+    .card-2 {
+        position: absolute;
+        right: 400px;
+        top: 250px;
+    }
+
+    .card-3 {
+        position: absolute;
+        right: 20px;
+        top: 250px;
+    }
+
+    .card-4 {
+        position: absolute;
+        right: 500px;
+        top: 450px;
+    }
+
+    .card-5 {
+        position: absolute;
+        right: 150px;
+        top: 450px;
+    }
+
+
+
 
 }

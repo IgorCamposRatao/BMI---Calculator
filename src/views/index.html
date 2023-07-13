@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="../../public/javascript/calculator.js" defer></script>
 
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
@@ -37,11 +38,11 @@
 
           <fieldset class="unity">
             <div class="radio-options">
-              <input type="radio" class="radio-type" value="Metric" name="unitys">
+              <input type="radio" class="radio-type type-metric" value="Metric" name="unitys" checked>
               <label for="">Metric</label>
             </div>
             <div class="radio-options">
-              <input type="radio" class="radio-type" value="Imperial" name="unitys">
+              <input onclick= imperial() type="radio" class="radio-type" value="Imperial" name="unitys">
               <label for="">Imperial</label>
             </div>
           </fieldset>
@@ -71,11 +72,11 @@
 
           <fieldset class="unity">
             <div class="radio-options">
-              <input type="radio" class="radio-type" value="Metric" name="unitys">
+              <input onclick= metric() type="radio" class="radio-type" value="Metric" name="unitys" >
               <label for="">Metric</label>
             </div>
             <div class="radio-options">
-              <input type="radio" class="radio-type" value="Imperial" name="unitys">
+              <input type="radio" class="radio-type type-imperial" value="Imperial" name="unitys" >
               <label for="">Imperial</label>
             </div>
           </fieldset>
@@ -90,8 +91,8 @@
             <div class="weight">
               <label for="weight">Weight</label>
               <div class="imperial-input">
-              <input type="text" name="weight" placeholder="st">
-              <input type="text" name="weight" placeholder="lbs">
+                <input type="text" name="weight" placeholder="st">
+                <input type="text" name="weight" placeholder="lbs">
               </div>
             </div>
           </div>
@@ -105,7 +106,11 @@
         </form>
       </div>
     </section>
+
+    <div class="curved-line"> <img class="line-left" src="../../public/images/pattern-curved-line-left.svg" alt=""></div>
+
     <section class="section-two">
+
       <div class="result-introduce">
         <img src="../../public/images/image-man-eating.webp" alt="">
         <div class="meaning-results">
@@ -171,6 +176,7 @@
     </section>
 
     <section class="limitations">
+      
       <div class="lim-2">
         <div class="limitation-introdutory">
           <h2>Limitations of BMI</h2>
@@ -178,7 +184,9 @@
             groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be
             beneficial to use.</p>
         </div>
+        <div class="curved-line"> <img class="line-right" src="../../public/images/pattern-curved-line-right.svg" alt=""></div>
       </div>
+     
 
       <div class="limitation-cards">
         <div class="cards card-1">
